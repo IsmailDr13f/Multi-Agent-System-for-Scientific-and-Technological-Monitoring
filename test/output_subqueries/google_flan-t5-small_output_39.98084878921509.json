@@ -1,0 +1,1622 @@
+[
+    {
+        "Data-Lab": {
+            "main_query": "What data preprocessing techniques are used to clean and normalize datasets?",
+            "sub_queries": [
+                {
+                    "subquery": "Who works out with the data?",
+                    "similarity": 0.38166430592536926
+                },
+                {
+                    "subquery": "Why is standard data preparation not supported by software?",
+                    "similarity": 0.44543391466140747
+                },
+                {
+                    "subquery": "Do research into the Data Preprocessing methods to ensure correct and regularize datasets?",
+                    "similarity": 0.7738087773323059
+                },
+                {
+                    "subquery": "What data preprocessing practices are used?",
+                    "similarity": 0.78307044506073
+                },
+                {
+                    "subquery": "How many different preprocessing techniques are used to clean data?",
+                    "similarity": 0.8296493291854858
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "How does the lab handle big data processing and real-time analytics?",
+            "sub_queries": [
+                {
+                    "subquery": "How much data can be retrieved from the data for using real-time methods?",
+                    "similarity": 0.4529721140861511
+                },
+                {
+                    "subquery": "What's A&A different to Big Data Processing and Reality Analytics?",
+                    "similarity": 0.6010382771492004
+                },
+                {
+                    "subquery": "What field requires a database processor to be able to measure their performance accurately and effectively?",
+                    "similarity": 0.3947223424911499
+                },
+                {
+                    "subquery": "How is IT analyzed in the lab?",
+                    "similarity": 0.4424983561038971
+                },
+                {
+                    "subquery": "The typical type of analysis can only be performed with a computer. Which machine can run?",
+                    "similarity": 0.5016366243362427
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "What machine learning frameworks are primarily used in the Data-Lab?",
+            "sub_queries": [
+                {
+                    "subquery": "How is the datasets used at?",
+                    "similarity": 0.48465442657470703
+                },
+                {
+                    "subquery": "Machine learning is one of its mainly utilized. How do people benefit?",
+                    "similarity": 0.5061252117156982
+                },
+                {
+                    "subquery": "Which AI, heuser-Busch Automation, IBM Systems Inc., etc.",
+                    "similarity": 0.38430821895599365
+                },
+                {
+                    "subquery": "What are four AI models created when they first appeared on Microsoft?",
+                    "similarity": 0.39630556106567383
+                },
+                {
+                    "subquery": "A few examples include DVB 4.0 and 7.1. The data-Lab may be used in conjunction with data-labs. Which programming language can support a certain format. Which are included in the software?",
+                    "similarity": 0.5267547369003296
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "How is distributed computing (e.g., Apache Spark) applied in data-intensive tasks?",
+            "sub_queries": [
+                {
+                    "subquery": "How is Distributed Computer application?",
+                    "similarity": 0.6783626675605774
+                },
+                {
+                    "subquery": "How is distributed computing applied in data?",
+                    "similarity": 0.7889460325241089
+                },
+                {
+                    "subquery": "What form of computational power is distributed computing (or?",
+                    "similarity": 0.6175546050071716
+                },
+                {
+                    "subquery": "How is distributed computing accomplished?",
+                    "similarity": 0.768269419670105
+                },
+                {
+                    "subquery": "What sort of program operates out these data loops?",
+                    "similarity": 0.236409991979599
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "What are the key database architectures used for data storage and retrieval?",
+            "sub_queries": [
+                {
+                    "subquery": "What is the key dater hardware the datastore was unable to buy?",
+                    "similarity": 0.365153431892395
+                },
+                {
+                    "subquery": "What software architecture is used to develop data storage infrastructure like d-files, pb file, software from X.E, MS/C++ and Windows-based?",
+                    "similarity": 0.6289750337600708
+                },
+                {
+                    "subquery": "What do you want to collect data?",
+                    "similarity": 0.4681657552719116
+                },
+                {
+                    "subquery": "What are these fundamentals?",
+                    "similarity": 0.2559981346130371
+                },
+                {
+                    "subquery": "What are three key data technology features you can store up to now: database?",
+                    "similarity": 0.7077450156211853
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "How is data security and encryption managed in large-scale projects?",
+            "sub_queries": [
+                {
+                    "subquery": "Five is an information privacy system requiring data protection, one security service to manage their assets and two encryption service?",
+                    "similarity": 0.5169520378112793
+                },
+                {
+                    "subquery": "How is data security managed for small-scale projects organized?",
+                    "similarity": 0.8684585094451904
+                },
+                {
+                    "subquery": "How is data security / encryption managed in large-scale projects according to?",
+                    "similarity": 0.9937687516212463
+                },
+                {
+                    "subquery": "How are many data security tools managed and published on snarka microsoft website?",
+                    "similarity": 0.5188111066818237
+                },
+                {
+                    "subquery": "What is managed from data security and encryption across software?",
+                    "similarity": 0.7307025194168091
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "What advanced data visualization tools are used for analysis and reporting?",
+            "sub_queries": [
+                {
+                    "subquery": "What instrument to map data in tormented by machine learning system?",
+                    "similarity": 0.3606877624988556
+                },
+                {
+                    "subquery": "What are some of the tools used for visualization?",
+                    "similarity": 0.7844239473342896
+                },
+                {
+                    "subquery": "Can Data Vision provide analysis of data?",
+                    "similarity": 0.46977612376213074
+                },
+                {
+                    "subquery": "How are modern data visualization techniques mainly applied to datasets?",
+                    "similarity": 0.7548635601997375
+                },
+                {
+                    "subquery": "Learn about How to integrate a generative-oriented analysis of research?",
+                    "similarity": 0.3716582655906677
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "How does the lab implement feature engineering for predictive modeling?",
+            "sub_queries": [
+                {
+                    "subquery": "What methods for feature integration were in need?",
+                    "similarity": 0.5594078302383423
+                },
+                {
+                    "subquery": "[item 1] How is feature engineering used in this randomized sample test? During testing, this sampling requires measurements to be adjusted to reflect all assumptions (e.g. an incompatibility test for regression model.  In fact the sample's for-axis parameter values for regression analysis might be "IMM-1" "B-Stem". These measurements are done through the test. When is the evaluation performance for the sample for regression model measured ?",
+                    "similarity": 0.43800655007362366
+                },
+                {
+                    "subquery": "How do the robots respond to predictive algorithms for predictive models in the lab?",
+                    "similarity": 0.5735502243041992
+                },
+                {
+                    "subquery": "How do they design?",
+                    "similarity": 0.347320556640625
+                },
+                {
+                    "subquery": "What are two terms used for measuring performance of a machine?",
+                    "similarity": 0.16674715280532837
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "What methods are used to handle imbalanced datasets in AI models?",
+            "sub_queries": [
+                {
+                    "subquery": "what does an inverse model need to implement in that equation?",
+                    "similarity": 0.11215142905712128
+                },
+                {
+                    "subquery": "What are their methodology for controlling all requises for evity and dji?",
+                    "similarity": 0.22038495540618896
+                },
+                {
+                    "subquery": "What are mainly implemented under different procedures at DNNs in A/D from models that contain variables that are imbalanced with the model of AI?",
+                    "similarity": 0.6654523611068726
+                },
+                {
+                    "subquery": "What two of these methods are used in processing graphs to measure the size of all rows?",
+                    "similarity": 0.11319413781166077
+                },
+                {
+                    "subquery": "Quantity, sample and frequency is the greatest?",
+                    "similarity": 0.04997963085770607
+                }
+            ]
+        }
+    },
+    {
+        "Data-Lab": {
+            "main_query": "How does the lab optimize data pipelines for high-performance processing?",
+            "sub_queries": [
+                {
+                    "subquery": "How is it based upon current systems and data dynamics?",
+                    "similarity": 0.3198767304420471
+                },
+                {
+                    "subquery": "Where is the test of the most robust and reliable data pipelines?",
+                    "similarity": 0.6192182302474976
+                },
+                {
+                    "subquery": "How do the lab optimize data pipelines to enhance performance?",
+                    "similarity": 0.9712627530097961
+                },
+                {
+                    "subquery": "How does the lab optimize its data pipeline in order to deliver faster information?",
+                    "similarity": 0.9233026504516602
+                },
+                {
+                    "subquery": "Do you understand your research methods?",
+                    "similarity": 0.11029982566833496
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "What software development methodologies are commonly followed in the Code-Lab?",
+            "sub_queries": [
+                {
+                    "subquery": "What technical discipline is most strongly supported by Code Lab program standards?",
+                    "similarity": 0.6811485290527344
+                },
+                {
+                    "subquery": "Examples of software-based and integrated technologies. What types of tools are listed below?",
+                    "similarity": 0.5706682801246643
+                },
+                {
+                    "subquery": "During programming languages, how many components are added into the program?",
+                    "similarity": 0.43847471475601196
+                },
+                {
+                    "subquery": "In how many ways do we work with these two methodologies?",
+                    "similarity": 0.46608278155326843
+                },
+                {
+                    "subquery": "What techniques is commonly followed at TechcInstance",
+                    "similarity": 0.2994840741157532
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "How does the lab implement microservices architecture in its projects?",
+            "sub_queries": [
+                {
+                    "subquery": "How is the process discussed with students and professionals.",
+                    "similarity": 0.33095043897628784
+                },
+                {
+                    "subquery": "How does the test demonstrate that bacteria and viruses respond by creating complex microspheres in a nondestructible microprocessor?",
+                    "similarity": 0.3809296488761902
+                },
+                {
+                    "subquery": "5 Embourage models and specifications for the lab with microservice",
+                    "similarity": 0.6084995269775391
+                },
+                {
+                    "subquery": "How does the lab meet other software and software providers for business environments?",
+                    "similarity": 0.5484453439712524
+                },
+                {
+                    "subquery": "Is it OK for them to produce data processing?",
+                    "similarity": 0.20053985714912415
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "What are the best practices for writing scalable and maintainable code?",
+            "sub_queries": [
+                {
+                    "subquery": "Which of those practices will most relate to a stack?",
+                    "similarity": 0.29958292841911316
+                },
+                {
+                    "subquery": "What is the best practice with CGI framework for a consistent approach and approach?",
+                    "similarity": 0.3567686676979065
+                },
+                {
+                    "subquery": "On what subject does the code take longer?",
+                    "similarity": 0.22036755084991455
+                },
+                {
+                    "subquery": "How does scripting work?",
+                    "similarity": 0.19879871606826782
+                },
+                {
+                    "subquery": "What do our authors use to develop robust code?",
+                    "similarity": 0.5821189284324646
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "How are CI/CD pipelines configured for automated deployment?",
+            "sub_queries": [
+                {
+                    "subquery": "How are piped by ACI/CD or HMSs governed?",
+                    "similarity": 0.5078846216201782
+                },
+                {
+                    "subquery": "Can flow-control pipelines with INFlP are implemented?",
+                    "similarity": 0.26837658882141113
+                },
+                {
+                    "subquery": "How did the company make the deployment method?",
+                    "similarity": 0.5377163887023926
+                },
+                {
+                    "subquery": "How are they configured?",
+                    "similarity": 0.3104878067970276
+                },
+                {
+                    "subquery": "I.F and CA have integrated CI if available resources are being used.",
+                    "similarity": 0.3971029818058014
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "What strategies are used to improve the efficiency of algorithmic computations?",
+            "sub_queries": [
+                {
+                    "subquery": "What are four strategies used in making a complex algorithm, "Nivel Theory"?",
+                    "similarity": 0.5821608901023865
+                },
+                {
+                    "subquery": "What algorithms help us to solve problems without compromising the efficacy of computer learning.",
+                    "similarity": 0.5690363049507141
+                },
+                {
+                    "subquery": "What systems are considered "procedure and maintenance", "procedure practices", or other key technology (a) developed by computer software program makers for algorithmic implementation by machine learning systems?",
+                    "similarity": 0.36738380789756775
+                },
+                {
+                    "subquery": "What are strategies used at the speed when it works.",
+                    "similarity": 0.41674742102622986
+                },
+                {
+                    "subquery": "What is the method used to improve the efficiency of algorithmic computations?",
+                    "similarity": 0.9497240781784058
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "How does the lab handle version control and collaborative coding?",
+            "sub_queries": [
+                {
+                    "subquery": "Why might not the lab have fewer members than docile copies before each year it has their name?",
+                    "similarity": 0.37397193908691406
+                },
+                {
+                    "subquery": "Who specializes in version controlling and collaborative coding techniques?",
+                    "similarity": 0.7856860160827637
+                },
+                {
+                    "subquery": "What language does the laboratory say it should write",
+                    "similarity": 0.38868674635887146
+                },
+                {
+                    "subquery": "What type of machine is the user familiar with",
+                    "similarity": 0.36799195408821106
+                },
+                {
+                    "subquery": "How is that done?",
+                    "similarity": 0.09903761744499207
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "What security protocols are implemented in software development?",
+            "sub_queries": [
+                {
+                    "subquery": "Name 5 different cybersecurity protocols implemented in software application development?",
+                    "similarity": 0.7947189807891846
+                },
+                {
+                    "subquery": "What are technical and security  protocols used in software development?",
+                    "similarity": 0.9132489562034607
+                },
+                {
+                    "subquery": "What is the only encryption technique used that uses these protocols?",
+                    "similarity": 0.5832395553588867
+                },
+                {
+                    "subquery": "What do they provide in a program to program security?",
+                    "similarity": 0.6274202466011047
+                },
+                {
+                    "subquery": "What resupply rules work?",
+                    "similarity": 0.014132514595985413
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "How does the lab use containerization (e.g., Docker, Kubernetes) in projects?",
+            "sub_queries": [
+                {
+                    "subquery": "How to open the open source IDE in Microsoft Word 4.0 version. 2.2 is a Linux OS that includes 2.7.",
+                    "similarity": 0.09527222812175751
+                },
+                {
+                    "subquery": "What were the limitations to containerization as a factor of progress in prototyping?",
+                    "similarity": 0.5093804597854614
+                },
+                {
+                    "subquery": "What may be the reason to see large pt's in Project 5?",
+                    "similarity": 0.28486254811286926
+                },
+                {
+                    "subquery": "How could you get permission under the document agreement of a large company or a smaller enterprise",
+                    "similarity": 0.08548391610383987
+                },
+                {
+                    "subquery": "How has the lab been emigrated to Linux?",
+                    "similarity": 0.3495088219642639
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "How are RESTful and GraphQL APIs developed and optimized?",
+            "sub_queries": [
+                {
+                    "subquery": "How long has the GraphQL developed into a RESTful API?",
+                    "similarity": 0.7889833450317383
+                },
+                {
+                    "subquery": "How often should you use an app that uses its API",
+                    "similarity": 0.32767635583877563
+                },
+                {
+                    "subquery": "How long have they been using them over the past 30 years?",
+                    "similarity": 0.1691247969865799
+                },
+                {
+                    "subquery": "How is graphQL applied to data analytics systems?",
+                    "similarity": 0.6190550327301025
+                },
+                {
+                    "subquery": "Describe how RESTful and GraphQL APIs is implemented mainly by RESTful and GraphQL?",
+                    "similarity": 0.9247266054153442
+                }
+            ]
+        }
+    },
+    {
+        "Code-Lab": {
+            "main_query": "What performance testing frameworks are used for software evaluation?",
+            "sub_queries": [
+                {
+                    "subquery": "Processes typically use performance sensitivity (input fidelity setting)?",
+                    "similarity": 0.3730688989162445
+                },
+                {
+                    "subquery": "Who did the team create this project according to?",
+                    "similarity": 0.0678887888789177
+                },
+                {
+                    "subquery": "What software is performed from this framework according to application development standard?",
+                    "similarity": 0.565929651260376
+                },
+                {
+                    "subquery": "The best testing frameworks are called which?",
+                    "similarity": 0.7536435127258301
+                },
+                {
+                    "subquery": "What operating systems are used according to what certification?",
+                    "similarity": 0.3482361435890198
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "What are the primary techniques used for RF signal analysis and testing?",
+            "sub_queries": [
+                {
+                    "subquery": "Which is the most common and fastest methods to detect the high bandwidth RF signals?",
+                    "similarity": 0.7271331548690796
+                },
+                {
+                    "subquery": "How did electronic devices work as these techniques became used in experiments to analyse the signal?",
+                    "similarity": 0.5820287466049194
+                },
+                {
+                    "subquery": "Which tool best suited for measurement?",
+                    "similarity": 0.2535458207130432
+                },
+                {
+                    "subquery": "What specialized technology is needed to determine these devices of radiation resistance and energy and signal interference?",
+                    "similarity": 0.558495819568634
+                },
+                {
+                    "subquery": "Name some basic data transfer for RF signal analysis compared to its competitors.",
+                    "similarity": 0.6979951858520508
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "How are PCB prototypes designed and tested for electronic applications?",
+            "sub_queries": [
+                {
+                    "subquery": "What are these test parameters evaluated for?",
+                    "similarity": 0.18480437994003296
+                },
+                {
+                    "subquery": "How did the prototype get to the top ten of some applications?",
+                    "similarity": 0.46006470918655396
+                },
+                {
+                    "subquery": "What was done to keep this information circulating as soon as I took charge the project?",
+                    "similarity": 0.06982240080833435
+                },
+                {
+                    "subquery": "What software was included in the project?",
+                    "similarity": 0.2979288101196289
+                },
+                {
+                    "subquery": "How is computers trained in the area of electronic services called?",
+                    "similarity": 0.30544447898864746
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "What role does electromagnetic compatibility (EMC) testing play in product validation?",
+            "sub_queries": [
+                {
+                    "subquery": "What were several examples of electromagnetic compatibility testing conducted that is related?",
+                    "similarity": 0.6990073919296265
+                },
+                {
+                    "subquery": "Who does electrical compatibility tester serve?",
+                    "similarity": 0.5691002011299133
+                },
+                {
+                    "subquery": "What is electrocoupler-proofing at work in ?",
+                    "similarity": 0.4905385375022888
+                },
+                {
+                    "subquery": "What roles does it play in production integration training?",
+                    "similarity": 0.28454118967056274
+                },
+                {
+                    "subquery": "Where are some testers to develop electronic software?",
+                    "similarity": 0.30006104707717896
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "How are semiconductor materials tested for microelectronic applications?",
+            "sub_queries": [
+                {
+                    "subquery": "How is micro-electronic micro-electronic nanostructure used before development?",
+                    "similarity": 0.6053208112716675
+                },
+                {
+                    "subquery": "What's the name for manufacturing materials besides polymer materials?",
+                    "similarity": 0.3609999418258667
+                },
+                {
+                    "subquery": "How are microelectronics tested with a microwave-based method of producing the semiconductor particles in electrical tyram?",
+                    "similarity": 0.7071493268013
+                },
+                {
+                    "subquery": "When did it start?",
+                    "similarity": 0.028327036648988724
+                },
+                {
+                    "subquery": "What is a non-selectron electrical solution?",
+                    "similarity": 0.4322531223297119
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "What software is used for signal integrity and power integrity simulations?",
+            "sub_queries": [
+                {
+                    "subquery": "What software is used, both in signal integrity and power integrity simulations?",
+                    "similarity": 0.9843942523002625
+                },
+                {
+                    "subquery": "What does a software use for analysis of noise decoupling system's characteristics?",
+                    "similarity": 0.5438233613967896
+                },
+                {
+                    "subquery": "What is the language in which they use the technology called?",
+                    "similarity": 0.11595741659402847
+                },
+                {
+                    "subquery": "What is A/MAMI (Input/Development) Software that is used for signal integrity and power integrity simulations?",
+                    "similarity": 0.7932960987091064
+                },
+                {
+                    "subquery": "What were first developed for simulation?",
+                    "similarity": 0.3818722069263458
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "How are thermal and environmental stress tests conducted on electronic components?",
+            "sub_queries": [
+                {
+                    "subquery": "Tests to make samples for electrophysical data on the electronic components contain what measurement that are not found as the results are accurate?",
+                    "similarity": 0.5086848735809326
+                },
+                {
+                    "subquery": "What method of conducting thermal and environmental stress tests is NOT included?",
+                    "similarity": 0.830150842666626
+                },
+                {
+                    "subquery": "What kinds of tests in high-quality energy products will the temperature have as high as nimo-sequences be ruled out by electronic testers for their temperature?",
+                    "similarity": 0.604539692401886
+                },
+                {
+                    "subquery": "How are thermal and environmental stress tests done?",
+                    "similarity": 0.8666834831237793
+                },
+                {
+                    "subquery": "In order to simulate the stress, a sample of ten neutrophil-like electrons has to conduct temperature determination and electrostatic tests to obtain. how many neutrophil-like electrons react to form energy or particles that contain carbon particles.",
+                    "similarity": 0.471222460269928
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "What technologies are used for MEMS (Micro-Electro-Mechanical Systems) fabrication?",
+            "sub_queries": [
+                {
+                    "subquery": "Which equipment does MEMS integrate according to the ISO standards listed in this text?",
+                    "similarity": 0.6072919964790344
+                },
+                {
+                    "subquery": "What is there to replace those which have not used or not working. It is not practical and only suitable for removing and replacement, in future or nonstandard production?",
+                    "similarity": 0.31682005524635315
+                },
+                {
+                    "subquery": "What products have proven to be incompatible with any form of fabrication?",
+                    "similarity": 0.47694456577301025
+                },
+                {
+                    "subquery": "What can be considered as MEMS?",
+                    "similarity": 0.6509106755256653
+                },
+                {
+                    "subquery": "What type of components are used for the fabrication of MEMS?",
+                    "similarity": 0.8390384316444397
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "How does the lab handle high-frequency circuit design and optimization?",
+            "sub_queries": [
+                {
+                    "subquery": "How do these are accomplished by other systems, according to the experiment.",
+                    "similarity": 0.29241642355918884
+                },
+                {
+                    "subquery": "Where was they found from in 1992: at its earliest facility?",
+                    "similarity": 0.11344743520021439
+                },
+                {
+                    "subquery": "How will we perform high frequency circuit design?",
+                    "similarity": 0.7791941165924072
+                },
+                {
+                    "subquery": "Does such material take up the whole spectrum that?",
+                    "similarity": 0.1561359167098999
+                },
+                {
+                    "subquery": "What does the lab take advantage of when they realize high-voltage and high-definition circuit engineering?",
+                    "similarity": 0.6929632425308228
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "What is the process for developing and testing embedded systems?",
+            "sub_queries": [
+                {
+                    "subquery": "Why do engineers build the embedded systems for the purposes of testing different modules and systems?",
+                    "similarity": 0.7284198999404907
+                },
+                {
+                    "subquery": "When was there a large amount of available applications for embedded systems developed?",
+                    "similarity": 0.5574849247932434
+                },
+                {
+                    "subquery": "Who is involved in developing and testing integrated systems?",
+                    "similarity": 0.6801647543907166
+                },
+                {
+                    "subquery": "How is embedded systems applied and performed in most hardware systems?",
+                    "similarity": 0.7249534130096436
+                },
+                {
+                    "subquery": "What is the process for developing integrated systems?",
+                    "similarity": 0.6442327499389648
+                }
+            ]
+        }
+    },
+    {
+        "Tech-Lab": {
+            "main_query": "How is machine learning integrated into electronic system diagnostics?",
+            "sub_queries": [
+                {
+                    "subquery": "What does Machine Learning stand for?",
+                    "similarity": 0.6144959330558777
+                },
+                {
+                    "subquery": "What can I do to help improve the health in diagnostic laboratories?",
+                    "similarity": 0.3479759097099304
+                },
+                {
+                    "subquery": "Questions, answers, and observations to refer to equipment designed to be integrated into electronic diagnosis of system behavior and processes may differ according to the organization of this product.",
+                    "similarity": 0.5212920904159546
+                },
+                {
+                    "subquery": "Which is the fastest and largest measurement to complete all system parameters in a single machine?",
+                    "similarity": 0.27649229764938354
+                },
+                {
+                    "subquery": "How are these machine learning techniques connected to one another?",
+                    "similarity": 0.5725558996200562
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "What automation frameworks are used for industrial process control?",
+            "sub_queries": [
+                {
+                    "subquery": "Which of the following software is available for controlling processes with multiple processes?",
+                    "similarity": 0.6178485155105591
+                },
+                {
+                    "subquery": "Were automated process control algorithms replaced by softwares?",
+                    "similarity": 0.6337948441505432
+                },
+                {
+                    "subquery": "Who develops systems for automation according to U.S. and Australian government regulations that have strict regulatory limits?",
+                    "similarity": 0.5358353853225708
+                },
+                {
+                    "subquery": "Which three types of automation frameworks are used?",
+                    "similarity": 0.8065080046653748
+                },
+                {
+                    "subquery": "In which organization does the automated processing process go into control when compared to its human workforce?",
+                    "similarity": 0.559402585029602
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "How are digital twins implemented in smart manufacturing systems?",
+            "sub_queries": [
+                {
+                    "subquery": "How many different brands are not digital hybrids employed?",
+                    "similarity": 0.3973739743232727
+                },
+                {
+                    "subquery": "Does video twin work in both smart manufacturing systems?",
+                    "similarity": 0.66617751121521
+                },
+                {
+                    "subquery": "What is the average age of a digital twin with multiple generations per thousand years of age?",
+                    "similarity": 0.4640282690525055
+                },
+                {
+                    "subquery": "What are the dimensions of digital twin systems ?",
+                    "similarity": 0.6096393465995789
+                },
+                {
+                    "subquery": "What technology has been used in robotic and metalworking systems?",
+                    "similarity": 0.40134739875793457
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "What role do PLCs (Programmable Logic Controllers) play in factory automation?",
+            "sub_queries": [
+                {
+                    "subquery": "Which kind of controls can help in automation using PLCs as i/an?",
+                    "similarity": 0.7683143019676208
+                },
+                {
+                    "subquery": "Components may be formed to measure and calculate an array of variables that require memory to register on a hardware processor. How can that calculate and measure a database, storage resources for the data. What are two applications per processor as compared to the same one with an existing production logic system and programmable?",
+                    "similarity": 0.2590966522693634
+                },
+                {
+                    "subquery": "The role where production processes must run on and offline simultaneously to ensure accuracy and reliability are measured accurately?",
+                    "similarity": 0.28858083486557007
+                },
+                {
+                    "subquery": "How will they work?",
+                    "similarity": 0.14064399898052216
+                },
+                {
+                    "subquery": "What does PLCs primarily consist of in factory-aide systems?",
+                    "similarity": 0.7849841117858887
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "How is IoT used to enhance predictive maintenance in industrial setups?",
+            "sub_queries": [
+                {
+                    "subquery": "How is IoT used in industrial setting?",
+                    "similarity": 0.7819088101387024
+                },
+                {
+                    "subquery": "Were the initial use methods of IoT augmented by predictive maintenance or other high tech technology employed on industrial scenarios?",
+                    "similarity": 0.8298717737197876
+                },
+                {
+                    "subquery": "What products is being created and uses?",
+                    "similarity": 0.2238021194934845
+                },
+                {
+                    "subquery": "What is use on my IEOI systems like RFC 324?",
+                    "similarity": 0.29492947459220886
+                },
+                {
+                    "subquery": "Which computer is designed to monitor the life cycle of multiple customers using IoT?",
+                    "similarity": 0.5569524765014648
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "What robotic control algorithms are used for autonomous systems?",
+            "sub_queries": [
+                {
+                    "subquery": "Robotica robots are used in which industry?",
+                    "similarity": 0.6150888204574585
+                },
+                {
+                    "subquery": "What was used of robotic control algorithm of some cars by its auto operator?",
+                    "similarity": 0.7163815498352051
+                },
+                {
+                    "subquery": "What are the basic algorithms used?",
+                    "similarity": 0.4966215491294861
+                },
+                {
+                    "subquery": "What is the most important algorithm being used in computerized operations?",
+                    "similarity": 0.4588206112384796
+                },
+                {
+                    "subquery": "A variety of types of system and sensors have many similar features:",
+                    "similarity": 0.3309409022331238
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "How is machine vision applied in quality control and defect detection?",
+            "sub_queries": [
+                {
+                    "subquery": "How is machine vision related to tumbling?",
+                    "similarity": 0.4988979399204254
+                },
+                {
+                    "subquery": "What is applied to quality control in the evaluation of defect reduction?",
+                    "similarity": 0.6393917202949524
+                },
+                {
+                    "subquery": "Why do scientists not only take special courses from the CSU?",
+                    "similarity": 0.1342889368534088
+                },
+                {
+                    "subquery": "ie machine vision involves machine, but which technique is best applied to this aspect of machine-control?",
+                    "similarity": 0.6267315149307251
+                },
+                {
+                    "subquery": "How is machine vision measured?",
+                    "similarity": 0.6902211904525757
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "What are the key challenges in integrating AI into industrial robotics?",
+            "sub_queries": [
+                {
+                    "subquery": "[[i]] Do engineers see potential in AI as different or less complex as incorporating them on other machines?",
+                    "similarity": 0.5124061107635498
+                },
+                {
+                    "subquery": "What are the significant requirements for combining AI in industrial robotic research?",
+                    "similarity": 0.7653236985206604
+                },
+                {
+                    "subquery": "Why should you do all 5 things right from a smart computer to a mobile device",
+                    "similarity": 0.20786017179489136
+                },
+                {
+                    "subquery": "The five elements that could potentially disrupt robotic robots could have their functions?",
+                    "similarity": 0.5308009386062622
+                },
+                {
+                    "subquery": "Were their engineers ready for industrial research?",
+                    "similarity": 0.3872221112251282
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "How are industrial communication protocols (e.g., MQTT, OPC-UA) implemented?",
+            "sub_queries": [
+                {
+                    "subquery": "How are commercial technologies being analyzed in order to find out as well as their respective product targets or services?",
+                    "similarity": 0.33764904737472534
+                },
+                {
+                    "subquery": "Quantions of protocols are being discussed in industrial and industrial applications?",
+                    "similarity": 0.7036193013191223
+                },
+                {
+                    "subquery": "Who are the two non-complex rules that have worked in the end?",
+                    "similarity": 0.21355067193508148
+                },
+                {
+                    "subquery": "What are two technologies that have been integrated together to build on existing technology?",
+                    "similarity": 0.4044431746006012
+                },
+                {
+                    "subquery": "What do industry standards stand for?",
+                    "similarity": 0.3716804087162018
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "What simulation tools are used to model industrial workflows and logistics?",
+            "sub_queries": [
+                {
+                    "subquery": "What do the three examples stand for?",
+                    "similarity": 0.09964688122272491
+                },
+                {
+                    "subquery": "I.D.?",
+                    "similarity": -0.04487181454896927
+                },
+                {
+                    "subquery": "Which is a simulator to machine analyzing Xafqua-based machines?",
+                    "similarity": 0.4969443678855896
+                },
+                {
+                    "subquery": "The a-tank and log-based Simulation toole consists of what number of parts of simulation machines?",
+                    "similarity": 0.6222857236862183
+                },
+                {
+                    "subquery": "In what machine machine is there an independent system of machines called simulators?",
+                    "similarity": 0.5060057640075684
+                }
+            ]
+        }
+    },
+    {
+        "Factory-Lab": {
+            "main_query": "How does the lab handle cybersecurity in industrial automation systems?",
+            "sub_queries": [
+                {
+                    "subquery": "How do they handle cybersecurity systems and what is another field?",
+                    "similarity": 0.7095051407814026
+                },
+                {
+                    "subquery": "How many different procedures does the lab carry out according to what model in industrial automation i.e. computer security?",
+                    "similarity": 0.7968069314956665
+                },
+                {
+                    "subquery": "What do they specialize in that are responsible for what?",
+                    "similarity": 0.24121731519699097
+                },
+                {
+                    "subquery": "How many days must the lab have?",
+                    "similarity": 0.3288889527320862
+                },
+                {
+                    "subquery": "Describe how to conduct cybersecurity in a CITI lab",
+                    "similarity": 0.7240480184555054
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "What are the fundamental principles behind LIBS (Laser-Induced Breakdown Spectroscopy)?",
+            "sub_queries": [
+                {
+                    "subquery": "How important is LIBS in terms of transparency?",
+                    "similarity": 0.42682844400405884
+                },
+                {
+                    "subquery": "What are all the components contained in one word of advice as of 10th grade?",
+                    "similarity": 0.11050210893154144
+                },
+                {
+                    "subquery": "For?",
+                    "similarity": -0.009677954018115997
+                },
+                {
+                    "subquery": "What elements did the invention of the new wave consist of?",
+                    "similarity": 0.14082232117652893
+                },
+                {
+                    "subquery": "Which principle can define the study of human behavior with lethal substances by cutting down the substance on the cellu2019s cells?",
+                    "similarity": 0.28844475746154785
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "How does XRF (X-ray Fluorescence) spectroscopy help in material analysis?",
+            "sub_queries": [
+                {
+                    "subquery": "What process could lead the investigation?",
+                    "similarity": 0.1722976118326187
+                },
+                {
+                    "subquery": "How did this help identify possible sources of material that were the subject of most applications?",
+                    "similarity": 0.3891674876213074
+                },
+                {
+                    "subquery": "How are the two sources tested?",
+                    "similarity": 0.18842986226081848
+                },
+                {
+                    "subquery": "What is used to analyze an opaque solution.?",
+                    "similarity": 0.4366477429866791
+                },
+                {
+                    "subquery": "How can XRF (x-ray fluorescence) telescopes detect chemical components?",
+                    "similarity": 0.7962685823440552
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "What methods are used for plasma diagnostics in micro-wave applications?",
+            "sub_queries": [
+                {
+                    "subquery": "What methods is used for micro-wave devices?",
+                    "similarity": 0.6127156019210815
+                },
+                {
+                    "subquery": "What is the name of the micro-wave ultrasound that can evaluate and report to micro-wave radiation?",
+                    "similarity": 0.6131046414375305
+                },
+                {
+                    "subquery": "Micro-sonic techniques used for test-feedback have what uses being called diagnostics?",
+                    "similarity": 0.5934521555900574
+                },
+                {
+                    "subquery": "The two most common invasive methods were used, and one preferred application by micro-programmers?",
+                    "similarity": 0.35803353786468506
+                },
+                {
+                    "subquery": "Is plasmas tested in a plasma test?",
+                    "similarity": 0.6485281586647034
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "How does the lab perform real-time spectroscopy analysis for industrial applications?",
+            "sub_queries": [
+                {
+                    "subquery": "What is one technique the laboratory uses for spectroscopy?",
+                    "similarity": 0.6781210899353027
+                },
+                {
+                    "subquery": "What is some of the following the same team are involved?",
+                    "similarity": 0.08151742815971375
+                },
+                {
+                    "subquery": "How does their lab perform real-time spectroscopy analysis for industrial applications?",
+                    "similarity": 0.9914119243621826
+                },
+                {
+                    "subquery": "How do electron samples go after?",
+                    "similarity": 0.315299928188324
+                },
+                {
+                    "subquery": "What is the procedure conducted in a lab environment and processes?",
+                    "similarity": 0.4657708704471588
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "What techniques are used to enhance the accuracy of non-destructive testing (NDT)?",
+            "sub_queries": [
+                {
+                    "subquery": "What types of techniques could also utilize non-destructive tests?",
+                    "similarity": 0.7438815236091614
+                },
+                {
+                    "subquery": "Quantition techniques and methods are used?",
+                    "similarity": 0.318421334028244
+                },
+                {
+                    "subquery": "Which methods are used to enhance the accuracy of non-destructive testing?",
+                    "similarity": 0.8791476488113403
+                },
+                {
+                    "subquery": "For an informational purpose, can there be any question?",
+                    "similarity": 0.03463719040155411
+                },
+                {
+                    "subquery": "What methods does low-level testing utilize to enhance accuracy?",
+                    "similarity": 0.6656275391578674
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "How are spectrometers calibrated for high-precision measurements?",
+            "sub_queries": [
+                {
+                    "subquery": "What is considered to be one tool for accurate measurement?",
+                    "similarity": 0.6154746413230896
+                },
+                {
+                    "subquery": "How did each object function normally?",
+                    "similarity": 0.1605032980442047
+                },
+                {
+                    "subquery": "How are high precision calibrations used?",
+                    "similarity": 0.8023232221603394
+                },
+                {
+                    "subquery": "[Hamilton, Iszl.] what other instrument is listed above?",
+                    "similarity": 0.14141395688056946
+                },
+                {
+                    "subquery": "How is an oscillometer measured according to various spectra?",
+                    "similarity": 0.6264574527740479
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "What are the challenges in applying spectroscopy for real-time quality monitoring?",
+            "sub_queries": [
+                {
+                    "subquery": "How are quality cameras used and utilized?",
+                    "similarity": 0.3827114403247833
+                },
+                {
+                    "subquery": "What is the main purpose of an imaging tool in observing quality?",
+                    "similarity": 0.5038082599639893
+                },
+                {
+                    "subquery": "What is different about the results?",
+                    "similarity": 0.09236502647399902
+                },
+                {
+                    "subquery": "How many times has an experiment shown so far and does the one produced that's used with more detailed inspection on if there is any doubt about this?",
+                    "similarity": 0.3386216461658478
+                },
+                {
+                    "subquery": "Were there issues to follow when it comes to real-time visibility?",
+                    "similarity": 0.43818607926368713
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "How is machine learning used to improve spectral data interpretation?",
+            "sub_queries": [
+                {
+                    "subquery": "How does machine learning combine quantitative methods with visual proof?",
+                    "similarity": 0.4672071933746338
+                },
+                {
+                    "subquery": "How to make machine learning simple, efficient?",
+                    "similarity": 0.483686625957489
+                },
+                {
+                    "subquery": "Among the 5 processes introduced are using their system of the standard spectral data acquisition technology. Which two metrics are best described in "Itasca: the evaluations"?",
+                    "similarity": 0.36675697565078735
+                },
+                {
+                    "subquery": "How can I solve the problem of Spectral",
+                    "similarity": 0.43711259961128235
+                },
+                {
+                    "subquery": "Were some machine learning methods used for this?",
+                    "similarity": 0.43668055534362793
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "What are the key differences between FTIR (Fourier Transform Infrared) and Raman spectroscopy?",
+            "sub_queries": [
+                {
+                    "subquery": "Five most notable differences, each having been used as benchmark, from FTIR but it has largely no effect on what process?",
+                    "similarity": 0.6101824045181274
+                },
+                {
+                    "subquery": "How is Raman spectroscopy related?",
+                    "similarity": 0.6341587901115417
+                },
+                {
+                    "subquery": "What were tynesized for spectroscopy which is comparable?",
+                    "similarity": 0.458991140127182
+                },
+                {
+                    "subquery": "Different types of solar spectroscopy are?",
+                    "similarity": 0.4240349531173706
+                },
+                {
+                    "subquery": "Which of these methods utilizes the same techniques?",
+                    "similarity": 0.23516204953193665
+                }
+            ]
+        }
+    },
+    {
+        "Spectrum-Lab": {
+            "main_query": "How is hyperspectral imaging applied in advanced material research?",
+            "sub_queries": [
+                {
+                    "subquery": "Are many areas where high-definitive imaging would be effective?",
+                    "similarity": 0.4537481367588043
+                },
+                {
+                    "subquery": "how many chrominated specimens are discovered when you are making photososas?",
+                    "similarity": 0.28549420833587646
+                },
+                {
+                    "subquery": "Where can hyperspectral imaging come from?",
+                    "similarity": 0.7688976526260376
+                },
+                {
+                    "subquery": "How does hyperspectral imaging apply to advanced material research?",
+                    "similarity": 0.9739143252372742
+                },
+                {
+                    "subquery": "Where?",
+                    "similarity": 0.038567136973142624
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "What are the latest advancements in 3D printing materials and processes?",
+            "sub_queries": [
+                {
+                    "subquery": "Which advanced technologies that produced the first-ever in the automotive use were the latest?",
+                    "similarity": 0.5255372524261475
+                },
+                {
+                    "subquery": "What are several advanced advancements included in the creation of 3D printers",
+                    "similarity": 0.814245879650116
+                },
+                {
+                    "subquery": "What three kinds of printers is marketed?",
+                    "similarity": 0.5315611362457275
+                },
+                {
+                    "subquery": "What are the 3D graphics ?",
+                    "similarity": 0.44134941697120667
+                },
+                {
+                    "subquery": "What is a major technological change?",
+                    "similarity": 0.40002745389938354
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "How are multi-material additive manufacturing techniques optimized?",
+            "sub_queries": [
+                {
+                    "subquery": "What does scalability of the laminate mean?",
+                    "similarity": 0.3494437336921692
+                },
+                {
+                    "subquery": "What kind are multi-material additive manufacturing techniques optimized?",
+                    "similarity": 0.9597270488739014
+                },
+                {
+                    "subquery": "What types of designs are formulated that are well integrated into an array system?",
+                    "similarity": 0.26749134063720703
+                },
+                {
+                    "subquery": "What types of parts are used by applications where multi-material is optimized?",
+                    "similarity": 0.6946154832839966
+                },
+                {
+                    "subquery": "['Company and additive manufacturing', a.j. ) Are the following products not commonly developed by kc-2000?]",
+                    "similarity": 0.42161625623703003
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "What role does topology optimization play in mechanical prototyping?",
+            "sub_queries": [
+                {
+                    "subquery": "A main determinant on the core is, which role does #1 mainly plays. Some of these determinants play in identifying or finding weaknesses. Some of these determinant are: Most, most; not all, of which three are core?",
+                    "similarity": 0.08714119344949722
+                },
+                {
+                    "subquery": "What can it make the kinetic control of high-topology be?",
+                    "similarity": 0.5822626352310181
+                },
+                {
+                    "subquery": "What process is most associated with topology optimization?",
+                    "similarity": 0.7865258455276489
+                },
+                {
+                    "subquery": "Predict the effect of topological optimization in mechanical prototyping in what form?",
+                    "similarity": 0.87673020362854
+                },
+                {
+                    "subquery": "What kind of optimization do metametry and magnetography?",
+                    "similarity": 0.45393839478492737
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "How does the lab ensure dimensional accuracy in rapid prototyping?",
+            "sub_queries": [
+                {
+                    "subquery": "Does it allow more or less precision for the inference for calculating data?",
+                    "similarity": 0.36843135952949524
+                },
+                {
+                    "subquery": "How should I use space based measurement?",
+                    "similarity": 0.32270535826683044
+                },
+                {
+                    "subquery": "Does the testing not include multiple layers of layer?",
+                    "similarity": 0.17217254638671875
+                },
+                {
+                    "subquery": "How is using the laboratory used to assess for density during pre-initilization?",
+                    "similarity": 0.42906177043914795
+                },
+                {
+                    "subquery": "5 Aspects in Rapid prototyping could in particular be what they produce/utilize and produce.",
+                    "similarity": 0.5467547178268433
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "What testing methods are used to evaluate the strength of 3D-printed components?",
+            "sub_queries": [
+                {
+                    "subquery": "Questions include: When testing components is done, what is the quickest way to use a test method or testing method?",
+                    "similarity": 0.37445318698883057
+                },
+                {
+                    "subquery": "Test procedures utilizing simulated component reactions have the effect of "stable and clean" or "safe" methods to identify these problems. (For example, e.g. sandblast to heat/air the mixture while generating 3D). This requires multiple tests using the specific spectral measurement and in a single sampler(for example sandbox) and generating which is not necessarily sufficient, such as chemical or heavonic components (smarters by mixing water with 10% of the sample).",
+                    "similarity": 0.4430750012397766
+                },
+                {
+                    "subquery": "Which tests should be conducted for an evaluation purpose?",
+                    "similarity": 0.3850703835487366
+                },
+                {
+                    "subquery": "What tests do manufacturers and manufactures operate for these samples?",
+                    "similarity": 0.536349892616272
+                },
+                {
+                    "subquery": "What are some tests used to evaluate and resize some types of '2P' atoms made in 3D?",
+                    "similarity": 0.5278144478797913
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "How is CNC machining integrated into prototype development?",
+            "sub_queries": [
+                {
+                    "subquery": "How are the parts, as provided to prototypes assemble?",
+                    "similarity": 0.5297975540161133
+                },
+                {
+                    "subquery": "how enables CNC manure machining?",
+                    "similarity": 0.7110621929168701
+                },
+                {
+                    "subquery": "CNPs implented and tested for accuracy when used as an early prototypes, not being compatible with what code?",
+                    "similarity": 0.5075690746307373
+                },
+                {
+                    "subquery": "Name the manufacturing industry's first computerized method in the field of programming languages.?",
+                    "similarity": 0.36659979820251465
+                },
+                {
+                    "subquery": "How does CNC machining incorporate?",
+                    "similarity": 0.8543837070465088
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "What are the key challenges in scaling up prototypes to mass production?",
+            "sub_queries": [
+                {
+                    "subquery": "What are the main hurdles for scaling up the prototypes?",
+                    "similarity": 0.908251941204071
+                },
+                {
+                    "subquery": "Describe what problems lead to large machine laboral volumes at the mid scale?",
+                    "similarity": 0.4807758331298828
+                },
+                {
+                    "subquery": "What is a fundamental development under development from the introduction of new devices to modern markets?",
+                    "similarity": 0.4021153450012207
+                },
+                {
+                    "subquery": "How much mass produces the prototypes to reach useable density in the manufacturing industry?",
+                    "similarity": 0.6976357698440552
+                },
+                {
+                    "subquery": "What are some key challenges for scaling a machine to production?",
+                    "similarity": 0.7117974162101746
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "How are simulation tools used to predict mechanical performance of fabricated parts?",
+            "sub_queries": [
+                {
+                    "subquery": "What is the role of simulation tools for measurement of hydraulic current resorption ?",
+                    "similarity": 0.5166462659835815
+                },
+                {
+                    "subquery": "How are simulation tools used to predict mechanical performance in CAD materials?",
+                    "similarity": 0.8877787590026855
+                },
+                {
+                    "subquery": "What is simulated tools used?",
+                    "similarity": 0.6541587114334106
+                },
+                {
+                    "subquery": "How do many examples of simulation tool used?",
+                    "similarity": 0.6115139722824097
+                },
+                {
+                    "subquery": "What are two ways to assess mechanical damage?",
+                    "similarity": 0.414932519197464
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "What are the emerging trends in biofabrication and bioprinting?",
+            "sub_queries": [
+                {
+                    "subquery": "What will future generations of textile producers, the bioetto producer, and processor also benefit from?",
+                    "similarity": 0.4860549867153168
+                },
+                {
+                    "subquery": "In 2010 what gender were the introduction of bidding companies with low gender-friendly bidding companies.",
+                    "similarity": 0.11100069433450699
+                },
+                {
+                    "subquery": "Why would this trend take effect as some type of media?",
+                    "similarity": 0.2883281707763672
+                },
+                {
+                    "subquery": "What was most important to me today?",
+                    "similarity": 0.036341384053230286
+                },
+                {
+                    "subquery": "As an ingredient in the BioPages product, what is bioprinted or bioprinted by humans for cellular biofilm?",
+                    "similarity": 0.6630380153656006
+                }
+            ]
+        }
+    },
+    {
+        "Fab-Lab": {
+            "main_query": "How does the lab implement quality assurance for rapid manufacturing?",
+            "sub_queries": [
+                {
+                    "subquery": "How to perform high quality assurance?",
+                    "similarity": 0.6877001523971558
+                },
+                {
+                    "subquery": "What does the lab provide me?",
+                    "similarity": 0.4328461289405823
+                },
+                {
+                    "subquery": "How does the lab work to achieve the goals mentioned below?",
+                    "similarity": 0.5349706411361694
+                },
+                {
+                    "subquery": "What is the main topic of the story as it stands in the area of assessing the quality?",
+                    "similarity": 0.3608878254890442
+                },
+                {
+                    "subquery": "What might happen between the laboratories in which production and engineering are run and what is most likely the results likely are",
+                    "similarity": 0.4753926992416382
+                }
+            ]
+        }
+    }
+]
