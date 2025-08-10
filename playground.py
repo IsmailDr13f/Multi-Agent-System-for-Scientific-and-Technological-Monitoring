@@ -8,7 +8,7 @@ from agno.models.google import Gemini
 from agno.team.team import Team
 import os
 from dotenv import load_dotenv
-from bloc_2.prompt import team_manager_prompt
+from bloc_2.prompt_ import team_manager_prompt
 from agno.playground import Playground, serve_playground_app
 from agno.storage.sqlite import SqliteStorage
 from agno.memory.v2.db.sqlite import SqliteMemoryDb

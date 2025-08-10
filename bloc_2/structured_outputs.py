@@ -9,14 +9,14 @@ class AcademicPaper(BaseModel):
     publication_date: str = Field(..., description="Publication date of the paper.")
     abstract: str = Field(..., description="Abstract of the paper.")
     key_findings: List[str] = Field(..., description="Key findings or contributions of the paper.")
-    relevance: str = Field(..., description="Why this paper is relevant to the query.")
+    #relevance: str = Field(..., description="Why this paper is relevant to the query.")
     source: str = Field(..., description="Source of the paper (arxiv, journal, etc.).")
 
 class AcademicResearchResponse(BaseModel):
-    query_summary: str = Field(..., description="A summary of the research query.")
-    papers: List[AcademicPaper] = Field(..., description="List of relevant academic papers.")
-    synthesis: str = Field(..., description="A synthesis of the findings across papers.")
-    future_directions: str = Field(..., description="Potential future research directions based on findings.")
+    #query_summary: str = Field(..., description="A summary of the research query.")
+    academic_papers: List[AcademicPaper] = Field(..., description="List of relevant academic papers.")
+    #synthesis: str = Field(..., description="A synthesis of the findings across papers.")
+    #future_directions: str = Field(..., description="Potential future research directions based on findings.")
 
 # 2. Search Engine Agent Model
 class SearchResult(BaseModel):

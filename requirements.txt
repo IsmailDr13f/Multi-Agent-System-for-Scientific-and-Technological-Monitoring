@@ -96,3 +96,9 @@ tzdata==2025.2
     # via pandas
 urllib3==2.4.0
     # via requests
+agno==1.7.9
+streamlit==1.45.0
+google-genai==1.29.0
+pymongo==4.14.0
+exa-py==1.14.20
+streamlit-elements==0.1.0

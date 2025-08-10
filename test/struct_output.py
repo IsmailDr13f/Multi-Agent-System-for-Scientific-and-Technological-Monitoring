@@ -4,7 +4,7 @@ from agno.agent import Agent
 from dotenv import load_dotenv
 from agno.models.google import Gemini
 import os
-
+from agno.tools.googlesearch import GoogleSearchTools
 class GeminiKeyRotator:
     def __init__(self, env_var_name='GEMINI_KEYS', prompts_per_key=10):
         load_dotenv()  # Load .env into environment variables
@@ -39,17 +39,22 @@ rotator = GeminiKeyRotator()
 
 class MovieScript(BaseModel):
     name: str = Field(..., description="Name of the movie.")
-    setting: str = Field(..., description="Provide a setting for the movie.")
+    setting: str = Field(..., description="Provide a setting for the movies.")
     ending: str = Field(..., description="Describe the movie ending.")
     genre: str = Field(..., description="Genre of the movie.")
     characters: List[str] = Field(..., description="List of characters.")
     storyline: str = Field(..., description="A 3-sentence storyline.")
 
+class Movieslist(BaseModel):
+    movies: List[MovieScript] = Field(..., description="List of movie scripts.")
+
 agent = Agent(
     model=Gemini(id="gemini-2.0-flash", api_key=rotator.get_current_key()),
     instructions=["Generate a movie script outline.", "Provide a detailed plot summary."],
-    response_model=MovieScript,
+    #tools=[GoogleSearchTools(cache_results=True)],
+    response_model=Movieslist,
     markdown=True,
 )
 
-agent.print_response("Generate a movie script outline for a sci-fi adventure.")
+#agent.print_response("Generate 3 movies script outline for a sci-fi adventure.")
+print(dict(agent.run("Generate 3 movies script outline for a sci-fi adventure.").content))

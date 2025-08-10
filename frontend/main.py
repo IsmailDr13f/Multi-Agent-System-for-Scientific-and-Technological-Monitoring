@@ -7,10 +7,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..','bl
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
-from bloc_1.context_agent import Context_Agent
+#from bloc_1.context_agent import Context_Agent
+from bloc_2.AgentsResearchTeam import Context_Agent, academic_paper_researcher_, engine_search_agent_, Video_agent_
+from bloc_2.SearchWorkflow import SearchWorkflow
 import streamlit as st
 from datetime import datetime, timedelta
-#from apscheduler.schedulers.background import BackgroundScheduler
 import time
 from searchbar import search_agent, apply_search_styles
 import logging
@@ -116,8 +117,8 @@ def sidebar_nav(user_info):
     # Conteneur pour organiser l'input et le bouton
     with st.sidebar.container():
         text_input = st.text_input(
-            "",
-            label_visibility="collapsed",#st.session_state.visibility,
+            "Search",
+            label_visibility="collapsed",
             disabled=st.session_state.disabled,
             placeholder=st.session_state.placeholder,
             key="search_input"
@@ -139,18 +140,18 @@ def sidebar_nav(user_info):
                     search_response = search_agent(text_input)
                     st.session_state.search_results = search_response.content
                     print(f"Search results: {st.session_state.search_results}")
-                    # Pass the entire response object or extract the content properly
-                    show_article_dialog(st.session_state.search_results)  # or search_response.content if it's a string
-                    
+                    show_article_dialog(st.session_state.search_results)
                     
                 except Exception as e:
                     st.sidebar.error(f"Search failed: {str(e)}")
         else:
             st.sidebar.warning("Please enter a search query")
 
-    
     st.sidebar.markdown("---")
-    st.sidebar.button("Logout", on_click=st.logout,use_container_width=True)
+    if st.sidebar.button("Logout", use_container_width=True):
+        # Clear session state and logout
+        st.session_state.clear()
+        st.rerun()
 
     # --- section news ----
     news = st.Page("news/news.py", title="news & notification", icon=":material/dashboard:")
@@ -158,7 +159,6 @@ def sidebar_nav(user_info):
 
     # --- section saved & liked news ----
     saved_liked_news = st.Page("saved_liked/saved.py", title="Saved & Discussed News", icon=":material/save:")
-    #liked_news = st.Page("saved_liked/liked.py", title="Liked news", icon=":material/thumb_up:")
 
     # --- discussion history ----
     discussed_news = st.Page("chat/agents_ui.py", title="Discussion history", icon=":material/chat:")
@@ -167,19 +167,15 @@ def sidebar_nav(user_info):
     profile = st.Page("settings/profile.py", title="Profile", icon=":material/account_circle:")
     system_settings = st.Page("settings/system_settings.py", title="System settings", icon=":material/settings:")
     
-    
     pg = st.navigation(
         {
             "Newsfeed": [news_],
             "Settings": [profile, saved_liked_news, system_settings],
-            #"Saved & Liked News": [saved_news, liked_news],
             "Discussed news History": [discussed_news],
-            
         }
     )
 
     pg.run()
-
 
 
 def connect_to_mongodb_users():
@@ -211,28 +207,39 @@ def save_profile_to_mongodb(profile):
     # Insert the profile into the collection
     collection.insert_one(profile)
     st.session_state.new_user = True
-    #st.session_state.new_user_email = profile.get("email", "")  # Stocker l'email du nouvel utilisateur
     return True
+
+def search_content_4_new_user():
+    """
+    Function to handle search content for new users.
+    This function is called when a new user is created and needs to search content.
+    """
+    workflow = SearchWorkflow(
+        name="SmartSearchWorkflow",
+        agents=[
+            academic_paper_researcher_,
+            engine_search_agent_,
+            Video_agent_,
+        ],
+    )
+
+    # Appel avec user_email
+    result = workflow.run(topic="AI and workflows", user_email=user_email)
     
     
-
-
 
 # Function to display the main page with the form
 def load_forms(user_info):
-    
     
     # Déterminer le type de user_info et extraire les informations
     if isinstance(user_info, dict):
         # user_info est un dictionnaire - utiliser les clés directement
         user_name = user_info.get("name", "")
         user_email = user_info.get("email", "")
-        #print("User info is a dictionary")
     else:
         # user_info est un objet - utiliser hasattr et les attributs
         user_name = user_info.name if hasattr(user_info, "name") else ""
         user_email = user_info.email if hasattr(user_info, "email") else ""
-        #print("User info is an object")
     
     # Check if user exists in database
     collection = connect_to_mongodb_users()
@@ -257,26 +264,23 @@ def load_forms(user_info):
     **Name** : {profil['name'] or "Not provided"}  
     **Email** : {profil['email'] or "Not provided"}  
     """)
-    #st.sidebar.button("Logout", on_click=st.logout)
+    
     if st.sidebar.button("Logout", use_container_width=True):
-        # Clear session state first
+        # Clear session state
         st.session_state.clear()
-        # Then logout
-        #st.logout()
-        login_screen()
+        st.rerun()
 
     # ---- MAIN PAGE ----
     st.title("🧾 Information Form")
 
     with st.form("main_form"):
-        st.header("📌 General Information")
+        #st.header("📌 General Information")
 
         name = st.text_input("Full Name", value=profil["name"])
         email = st.text_input("Email", value=profil["email"])
         role = st.text_input("Role", value=profil["role"])
         role_description = st.text_area("Role Description", placeholder="Describe your responsibilities, focus areas, etc.")
 
-        
         # Dropdown selection for laboratory
         lab = st.selectbox(
             "Select your Laboratory",
@@ -285,7 +289,7 @@ def load_forms(user_info):
                   ["DATA", "CODE", "TECH", "SPECTRUM", "FACTORY", "FAB"].index(profil["laboratory"])
         )
 
-        st.header("🎯 Preferences and Interests")
+        #st.header("🎯 Preferences and Interests")
         preferences = st.multiselect(
             "Select your favorite topics:",
             options=[
@@ -300,14 +304,14 @@ def load_forms(user_info):
             default=profil["preferences"] if profil["preferences"] else ["Machine Learning", "Deep Learning"]
         )
 
-        st.header("📆 Availability & Commitment")
+        #st.header("📆 Availability & Commitment")
         availability = st.radio(
             "Current availability:",
             options=["Full-time", "Part-time"],
             index=0 if profil["availability"] == "Full-time" else 1
         )
 
-        st.header("🕒 Preferred Platform Usage Time")
+        #st.header("🕒 Preferred Platform Usage Time")
         usage_periods = st.multiselect(
             "When do you prefer to use the VST DICE platform?",
             options=[
@@ -329,56 +333,72 @@ def load_forms(user_info):
             "preferred_usage_periods": usage_periods,
         }
 
-        submitted = st.form_submit_button("✅ Create Account", on_click=save_profile_to_mongodb, args=(profile,))
+        btn_1, space_2, btn_3 = st.columns([1, 2, 1])
+        with btn_1:
+            submitted = st.form_submit_button("✅ Create Account", on_click=save_profile_to_mongodb, args=(profile,))
+        
 
     if submitted:
-        # logic of searching news by profile
-        st.success("✅ Thank you! Your responses have been recorded.")
+        # Inform the user
+        st.toast('Please wait while we prepare the context and securely save the information to the database…', icon="ℹ️")
+        
+        # Connect to MongoDB
+        collection = connect_to_mongodb_users()
+        
+        # Check if profile exists by email
+        existing_profile = collection.find_one({"email": profile["email"]})
+        
+        # Also handle the _id field if it exists in the existing profile
+        if existing_profile:
+            # Update existing profile with new data
+            updated_profile = existing_profile.copy()
+            updated_profile.update(profile)  # Merge new profile data with existing
+            profile = updated_profile
+            # Remove _id from the profile to avoid conflicts during update
+            profile_to_save = {k: v for k, v in profile.items() if k != '_id'}
+        else:
+            profile_to_save = profile
+        
+        # Create user context using the complete profile
+        user_context = Context_Agent.run(str(profile)).content
+        
+        # Convert user_context to dictionary if it's a custom object
+        if hasattr(user_context, '__dict__'):
+            user_context_dict = user_context.__dict__
+        else:
+            user_context_dict = user_context
+        print(f"User context: {user_context_dict}")
+        # Add user_context to the profile as a serializable dictionary
+        profile["user_context"] = user_context_dict['Search_Context']
 
+        # Save or update profile in MongoDB (upsert by email)
+        collection.update_one(
+            {"email": profile["email"]},   # Match by email
+            {"$set": profile_to_save},     # Update all profile fields excluding _id
+        )
 
+        # Store in session state
+        st.session_state.user_context = user_context
+        st.session_state.profile = profile  # Also store the complete profile
+        
+        # Confirm to the user
+        st.success("✅ Thank you! Your responses have been recorded along with your personalized context.")
+        with btn_3:
+            search_content=st.form_submit_button("➡️ Next",onclick=search_content_4_new_user(user_context_dict['Search_Context']), use_container_width=True,type="primary")
 
 
 def login_screen():
-    # Custom CSS for the login design
+    # Simplified CSS for the login design
     st.markdown("""
     <style>
     .stApp {
         background: linear-gradient(0deg, #ffffff 85%, #D64A2B 100%);
     }
     
-    .login-container {
-        display: flex;
-        height: 100vh;
-        max-width: 1200px;
-        margin: 0 auto;
-        background: white;
-        border-radius: 20px;
-        overflow: hidden;
-        box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-    }
-    
-    .image-section {
-        flex: 1;
-        background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .login-section {
-        flex: 1;
-        padding: 60px 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        background: white;
-    }
     
     .login-header {
-        margin-top: 50px;
         text-align: center;
-        
+        margin-bottom: 40px;
     }
     
     .login-title {
@@ -390,9 +410,9 @@ def login_screen():
     }
     
     .login-subtitle {
-        font-size: 14px;
+        font-size: 16px;
         color: #7f8c8d;
-        margin: 30px;
+        margin: 20px 0;
     }
     
     .logo-section {
@@ -424,100 +444,8 @@ def login_screen():
         font-size: 14px;
     }
     
-    .login-button {
-        background: repeating-linear-gradient(
-        0deg,
-        #F25022 0 12.5%,   /* Rouge */
-        #FFB900 12.5% 25%, /* Jaune */
-        #7FBA00 25% 37.5%, /* Vert  */
-        #00A4EF 37.5% 50%  /* Bleu  */
-        );
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 14px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    .login-button:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-    }
-    
-    .microsoft-button {
-        background: repeating-linear-gradient(
-        0deg,
-        #F25022 0 12.5%,   /* Rouge */
-        #FFB900 12.5% 25%, /* Jaune */
-        #7FBA00 25% 37.5%, /* Vert  */
-        #00A4EF 37.5% 50%  /* Bleu  */
-        );
-        color: white;
-        border: none;
-        padding: 15px 30px;
-        border-radius: 10px;
-        font-weight: 600;
-        font-size: 14px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-    
-    .microsoft-button:hover {
-        background: #000000;
-        transform: translateY(-2px);
-        box-shadow: 0 5px 15px rgba(0, 120, 212, 0.3);
-    }
-    
-    .divider {
-        display: flex;
-        align-items: center;
-        margin: 30px 0;
-        text-align: center;
-        color: #7f8c8d;
-        font-size: 14px;
-    }
-    
-    .divider::before,
-    .divider::after {
-        content: '';
-        flex: 1;
-        height: 1px;
-        background: #e9ecef;
-    }
-    
-    .divider::before {
-        margin-right: 15px;
-    }
-    
-    .divider::after {
-        margin-left: 15px;
-    }
-    
-    .image-placeholder {
-        width: 100%;
-        height: 100%;
-        background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600"><defs><linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23ff6b6b;stop-opacity:1" /><stop offset="100%" style="stop-color:%234ecdc4;stop-opacity:1" /></linearGradient></defs><rect width="400" height="600" fill="url(%23grad1)"/><circle cx="200" cy="200" r="80" fill="rgba(255,255,255,0.1)"/><circle cx="150" cy="350" r="60" fill="rgba(255,255,255,0.1)"/><circle cx="280" cy="450" r="40" fill="rgba(255,255,255,0.1)"/></svg>') center/cover;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: white;
-        font-size: 48px;
-        font-weight: bold;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-    }
-    
     .stButton > button {
-        background: #00A4EF; 
+        background: #00A4EF !important; 
         color: white !important;
         border: none !important;
         padding: 15px 30px !important;
@@ -531,17 +459,8 @@ def login_screen():
     
     .stButton > button:hover {
         transform: translateY(-2px) !important;
-        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3) !important;
-        background: #324C97 !important;     
-    }
-    
-    .microsoft-btn {
-        background: #0078d4 !important;
-    }
-    
-    .microsoft-btn:hover {
-        background: #106ebe !important;
-        box-shadow: 0 5px 15px rgba(0, 120, 212, 0.3) !important;
+        box-shadow: 0 5px 15px rgba(0, 164, 239, 0.3) !important;
+        background: #0078d4 !important;     
     }
     
     .stAlert {
@@ -549,84 +468,39 @@ def login_screen():
         border-radius: 10px;
     }
     
-    .remember-me {
-        margin-top: 15px;
-        margin-bottom: 10px;
-    }
-    
-    .stCheckbox {
-        margin-top: 10px;
-    }
-    
-    .stCheckbox > label {
-        font-size: 14px;
-        color: #7f8c8d;
-    }
-    
     .form-container {
         max-width: 400px;
         margin: 0 auto;
     }
     
-    .hidden {
-        display: none;
-    }
-    
-    .tab-buttons {
-        display: flex;
-        margin-bottom: 30px;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-    
-    .tab-button {
-        flex: 1;
-        padding: 15px 20px;
-        background: #f8f9fa;
-        border: none;
-        cursor: pointer;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        border-bottom: 3px solid transparent;
-    }
-    
-    .tab-button.active {
-        background: white;
-        color: #00A4EF;
-        border-bottom-color: #00A4EF;
-    }
-    
-    .tab-button:hover {
-        background: #e9ecef;
-    }
-    
-    .tab-button.active:hover {
-        background: white;
-    }
-    
     .signup-form {
         margin-top: 20px;
+    }
+    
+    .contact-info {
+        text-align: center; 
+        margin-top: 30px; 
+        color: #7f8c8d; 
+        font-size: 12px;
+    }
+    
+    .contact-info a {
+        color: #667eea; 
+        text-decoration: none;
     }
     </style>
     """, unsafe_allow_html=True)
     
-    # Initialize session state for tabs
-    if 'active_tab' not in st.session_state:
-        st.session_state.active_tab = 'login'
-    
     # Create the main layout
-    col1, col2, col3 = st.columns([1, 1, 1])
+    col1, col2, col3 = st.columns([1, 2, 1])
 
-    
     with col2:
-        # Right side - Login form
-        st.markdown('<div class="form-container">', unsafe_allow_html=True)
+        st.markdown('<div class="login-container">', unsafe_allow_html=True)
         
         # Logo section
         import base64
 
-        # Fonction pour encoder l'image en base64
+        # Function to encode image to base64
         def get_base64_image(image_path):
             try:
                 with open(image_path, "rb") as img_file:
@@ -634,54 +508,49 @@ def login_screen():
             except FileNotFoundError:
                 return None
 
-        # Obtenir l'image encodée
+        # Get encoded image
         logo_base64 = get_base64_image("images/LOGO DICE and um6p.png")
 
         if logo_base64:
-            # Affichage avec image encodée
             st.markdown(f"""
             <div class="logo-section">
-                <img src="data:image/png;base64,{logo_base64}" alt="VST DICE" class="logo-image" style="width: 300px; height: auto; ">
-                <div class="login-subtitle">Welcome back to VST DICE</div>
+                <img src="data:image/png;base64,{logo_base64}" alt="VST DICE" style="width: 300px; height: auto;">
+                <div class="login-subtitle">Welcome to VST DICE Platform</div>
             </div>
             """, unsafe_allow_html=True)
         
+        
         # Tab buttons
-        tab_login, tab_signup = st.tabs(["Login", "Sign Up"],)
+        tab_login, tab_signup = st.tabs(["Login", "Sign Up"])
         
         # Login Tab
         with tab_login:
-            # Email login form 
             with st.form("email_login", clear_on_submit=False):
                 email = st.text_input(
                     "Email",
                     placeholder="Enter your email",
                     key="email_input",
-                    help="Please enter your email to verify your account. This method is added to simplify the login process — no password is required."
+                    help="Please enter your email to verify your account."
                 )
+                st.warning(""" **Important Notice:**
+                For the test period, we have simplified the login process to make access quicker and easier.
+                Please note that this change is temporary and intended solely to streamline your experience during testing.
+                Thank you for your understanding and cooperation.""", icon="⚠️")
                 login_submitted = st.form_submit_button("LOGIN", type="primary", use_container_width=True)
 
-            #  On traite le login APRES le formulaire (pas à l’intérieur)
+            # Process login AFTER the form (not inside)
             if login_submitted:
                 if not email:
                     st.error("❌ Please enter your email.")
                 elif check_email_in_database(email):
-                    st.success(f"{check_email_in_database(email)} ✅ Email found in database. You can now access the platform.")
+                    st.success("✅ Email found in database. Welcome back!")
                     st.session_state.verified_email = email
                     if st.session_state.get("new_user_email") == email:
                         st.session_state.new_user = True
-                        #st.session_state.new_user_email = None
                     st.rerun()  
                 else:
-                    st.error("❌ Email not found in database")
+                    st.error("❌ Email not found in database. Please sign up first.")
 
-            # Divider
-            st.markdown('<div class="divider">OR</div>', unsafe_allow_html=True)
-
-            if st.button("🔐 Continue with Microsoft", key="microsoft_login", use_container_width=True, type="primary"):
-                st.login()
-
-               
         # Signup Tab
         with tab_signup:
             st.markdown('<div class="signup-form">', unsafe_allow_html=True)
@@ -730,30 +599,30 @@ def login_screen():
 
                 # Signup button
                 signup_submitted = st.form_submit_button("CREATE ACCOUNT", type="primary", use_container_width=True)
-                if signup_submitted:
-                    if not signup_email or not full_name:
-                        st.error("❌ Please fill in all required fields (Email and Full Name)")
-                    elif not is_valid_email(signup_email):
-                        st.error("❌ Please enter a valid email address")
-                    elif check_email_in_database(signup_email):
-                        st.error("❌ An account with this email already exists")
+                
+            if signup_submitted:
+                if not signup_email or not full_name:
+                    st.error("❌ Please fill in all required fields (Email and Full Name)")
+                elif not is_valid_email(signup_email):
+                    st.error("❌ Please enter a valid email address")
+                elif check_email_in_database(signup_email):
+                    st.error("❌ An account with this email already exists")
+                else:
+                    # Create new user account
+                    if save_profile_to_mongodb(profile):
+                        st.success("✅ Account created successfully! You can now login.")
+                        time.sleep(2)  # Optional delay before redirecting
+                        st.rerun()
                     else:
-                        # Create new user account
-                        if save_profile_to_mongodb(profile):
-                            st.success("✅ Account created successfully! You can now login.")
-                            st.session_state.active_tab = 'login'
-                            time.sleep(2)  # Optional delay before redirecting
-                            st.rerun()
-                        else:
-                            st.error("❌ Failed to create account. Please try again.")
+                        st.error("❌ Failed to create account. Please try again.")
             
             st.markdown('</div>', unsafe_allow_html=True)
         
-        # Additional info
+        # Contact info
         st.markdown("""
-        <div style="text-align: center; margin-top: 30px; color: #7f8c8d; font-size: 12px;">
-            Do you have a problem? Please Contact your administrator<br>
-            <a href="mailto:Ismail.DRIEF-EXT@um6p.ma" style="color: #667eea; text-decoration: none;">Ismail.DRIEF-EXT@um6p.ma</a>
+        <div class="contact-info">
+            Do you have a problem? Please contact your administrator<br>
+            <a href="mailto:Ismail.DRIEF-EXT@um6p.ma">Ismail.DRIEF-EXT@um6p.ma</a>
         </div>
         """, unsafe_allow_html=True)
         
@@ -767,48 +636,37 @@ def is_valid_email(email):
     return re.match(pattern, email) is not None
 
 
-# Logique principale d'authentification
-if not (st.user.is_logged_in or "verified_email" in st.session_state):
+# Main authentication logic
+if "verified_email" not in st.session_state:
     login_screen()
 else:
-    # Obtenir les infos utilisateur selon la méthode d'authentification
-    user_email = None
-    user_name = None
-    user_info = None
-    
-    if st.user.is_logged_in:
-        user_info = st.user
-        user_email = st.user.email
-        user_name = st.user.name
-    elif "verified_email" in st.session_state:
-        user_email = st.session_state.verified_email
-        collection_temp = connect_to_mongodb_users()
-        user_info = collection_temp.find_one({"email": user_email})
-        user_name = user_info.get("name", "") if user_info else "User"
+    # Get user info from verified email
+    user_email = st.session_state.verified_email
+    collection_temp = connect_to_mongodb_users()
+    user_info = collection_temp.find_one({"email": user_email})
+    user_name = user_info.get("name", "User") if user_info else "User"
 
-
-    # Vérifier que nous avons bien un email
     if not user_email:
-        st.error("Erreur: Impossible de récupérer l'email utilisateur")
+        st.error("Error: Unable to retrieve user email")
         st.stop()
     
-    st.header(f"👋 Welcome back, {user_name or 'User'} !")
+    st.header(f"👋 Welcome back, {user_name}!")
     
-    # Connexion à MongoDB une seule fois
+    # Connect to MongoDB once
     collection_ = connect_to_mongodb_users()
     existing_user = collection_.find_one({"email": user_email})
     
-    # Gestion des utilisateurs nouveaux vs existants
+    # Handle new vs existing users
     if existing_user is None:
-        # Nouvel utilisateur - afficher le formulaire d'inscription
+        # New user - show registration form
         st.session_state.new_user = True
         load_forms(user_info)
     elif st.session_state.get("new_user", False):
-        # Utilisateur existant mais forcé à refaire le formulaire
+        # Existing user but forced to redo form
         load_forms(user_info)
         st.session_state.new_user = False
     else:
-        # Vérifier si des champs du profil sont vides
+        # Check if profile fields are empty
         required_fields = {
             "name": existing_user.get("name", ""),
             "email": existing_user.get("email", ""),
@@ -820,7 +678,7 @@ else:
             "preferred_usage_periods": existing_user.get("preferred_usage_periods", [])
         }
         
-        # Vérifier si un ou plusieurs champs sont vides
+        # Check if any required fields are empty
         has_empty_fields = (
             not required_fields["name"] or
             not required_fields["email"] or
@@ -833,12 +691,11 @@ else:
         )
         
         if has_empty_fields:
-            #print("User info with empty fields:", user_info)
-            # Afficher le formulaire pour compléter le profil
+            # Show form to complete profile
             load_forms(user_info)
         else:
-            # Utilisateur existant avec profil complet - charger ses données
-            # Charger les infos en session
+            # Existing user with complete profile - load their data
+            # Load info into session
             st.session_state.user_info = user_info
             st.session_state.lab = existing_user.get("laboratory", "")
             st.session_state.role = existing_user.get("role", "")
@@ -847,7 +704,5 @@ else:
             st.session_state.name = existing_user.get("name", "")
             st.session_state.preferred_usage_periods = existing_user.get("preferred_usage_periods", [])
             
-            # Afficher la navigation
+            # Show navigation
             sidebar_nav(user_info)
-
-
