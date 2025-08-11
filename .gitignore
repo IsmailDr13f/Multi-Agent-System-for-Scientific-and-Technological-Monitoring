@@ -10,7 +10,7 @@ wheels/
 .venv
 
 # API keys
-.env
+# .env
 
 # Jupyter Notebook checkpoints
 .ipynb_checkpoints
