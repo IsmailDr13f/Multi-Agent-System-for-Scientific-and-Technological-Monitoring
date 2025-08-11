@@ -87,11 +87,11 @@ uv pip install -r requirements.txt
 ```
 
 ### 6. Setup MongoDB
-This project requires a **MongoDB server**. You can:
-- Install it locally: [MongoDB Community Server Download](https://www.mongodb.com/try/download/community)
-- Or use a cloud service: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
 
-Make sure to update your **MongoDB URI** in the `.env` file.
+Run mongnodb in a Docker container:
+```bash
+docker compose up mongodb -d
+```
 
 ### 7. Run the frontend
 ```bash
