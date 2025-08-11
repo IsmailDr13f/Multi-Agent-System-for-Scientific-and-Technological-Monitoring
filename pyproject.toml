@@ -5,7 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11.8"
 dependencies = [
-    "pandas>=2.2.3",
-    "sentence-transformers>=4.0.2",
+    "agno==1.7.9",
     "streamlit==1.45.0",
+    "google-genai==1.29.0",
+    "pymongo==4.14.0",
+    "exa-py==1.14.20",
+    "streamlit-elements==0.1.0"
 ]
