@@ -18,7 +18,7 @@ import logging
 import warnings
 warnings.filterwarnings("ignore")
 logging.getLogger('streamlit.runtime.scriptrunner').setLevel(logging.ERROR)
-st.logo("images/LOGO DICE and um6p.png")
+st.logo("images/logo_dice_and_um6p.png")
 from PIL import Image
 
 
@@ -223,11 +223,7 @@ def search_content_4_new_user():
         ],
     )
 
-    # Appel avec user_email
-    result = workflow.run(topic="AI and workflows", user_email=user_email)
     
-    
-
 # Function to display the main page with the form
 def load_forms(user_info):
     
@@ -380,11 +376,12 @@ def load_forms(user_info):
         # Store in session state
         st.session_state.user_context = user_context
         st.session_state.profile = profile  # Also store the complete profile
-        
+        st.session_state.new_user_search_context = user_context_dict['Search_Context']
+
         # Confirm to the user
         st.success("✅ Thank you! Your responses have been recorded along with your personalized context.")
         with btn_3:
-            search_content=st.form_submit_button("➡️ Next",onclick=search_content_4_new_user(user_context_dict['Search_Context']), use_container_width=True,type="primary")
+            search_content=st.form_submit_button("➡️ Next",on_click=search_content_4_new_user, use_container_width=True,type="primary")
 
 
 def login_screen():
